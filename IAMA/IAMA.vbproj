@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEE30AAC-5118-4074-A355-E4D384287E45}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>IAMA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>30</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en-SG</TargetCulture>
+    <ProductName>IAMS</ProductName>
+    <PublisherName>Vikram Ayyadurai</PublisherName>
+    <SuiteName>IAMS</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IAMA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>IAMA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IAMS Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataGridViewAutoFilter">
+      <HintPath>..\resources\DataGridViewAutoFilter\VB\DataGridViewAutoFilter\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessRights1.Designer.vb">
+      <DependentUpon>AccessRights1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRights1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AuditChecklist.Designer.vb">
+      <DependentUpon>AuditChecklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AuditChecklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditCycle.Designer.vb">
+      <DependentUpon>AuditCycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AuditCycle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditPlan.Designer.vb">
+      <DependentUpon>AuditPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AuditPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClauseMgmt.Designer.vb">
+      <DependentUpon>ClauseMgmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClauseMgmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientform.Designer.vb">
+      <DependentUpon>Clientform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnStr.vb" />
+    <Compile Include="CreateDept.Designer.vb">
+      <DependentUpon>CreateDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateRole.Designer.vb">
+      <DependentUpon>CreateRole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBConfig.Designer.vb">
+      <DependentUpon>DBConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employeeform.Designer.vb">
+      <DependentUpon>Employeeform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employeeform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export.vb" />
+    <Compile Include="Field Validation.vb" />
+    <Compile Include="FindingCategory.Designer.vb">
+      <DependentUpon>FindingCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindingCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Focus5018DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Focus5018DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Focus5018DataSet.vb">
+      <DependentUpon>Focus5018DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetdataSet.vb" />
+    <Compile Include="IAMADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IAMADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My Project\Settings1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Refreshme.vb" />
+    <Compile Include="ReportMgmt.Designer.vb">
+      <DependentUpon>ReportMgmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMgmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequirementMgmt.Designer.vb">
+      <DependentUpon>RequirementMgmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementMgmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\EncryptDecrypt.vb" />
+    <Compile Include="JobRequest.Designer.vb">
+      <DependentUpon>JobRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JobRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Standards.Designer.vb">
+      <DependentUpon>Standards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Standards.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabSelection.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccessRights1.resx">
+      <DependentUpon>AccessRights1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditChecklist.resx">
+      <DependentUpon>AuditChecklist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditCycle.resx">
+      <DependentUpon>AuditCycle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditPlan.resx">
+      <DependentUpon>AuditPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClauseMgmt.resx">
+      <DependentUpon>ClauseMgmt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientform.resx">
+      <DependentUpon>Clientform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDept.resx">
+      <DependentUpon>CreateDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateRole.resx">
+      <DependentUpon>CreateRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBConfig.resx">
+      <DependentUpon>DBConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindingCategory.resx">
+      <DependentUpon>FindingCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employeeform.resx">
+      <DependentUpon>Employeeform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMgmt.resx">
+      <DependentUpon>ReportMgmt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequirementMgmt.resx">
+      <DependentUpon>RequirementMgmt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobRequest.resx">
+      <DependentUpon>JobRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Standards.resx">
+      <DependentUpon>Standards.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Focus5018DataSet.xsc">
+      <DependentUpon>Focus5018DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Focus5018DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Focus5018DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Focus5018DataSet.xss">
+      <DependentUpon>Focus5018DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IAMA Class Diagram.cd" />
+    <None Include="IAMADataSet.xsc">
+      <DependentUpon>IAMADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IAMADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IAMADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IAMADataSet.xss">
+      <DependentUpon>IAMADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compliance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.11.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internal-Auditing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-audit-gdpr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audit-sampling.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19820-blue-vintage-wallpaper-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22351675.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plain-blue-background-22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light-blue-paper-texture-picture-free-photograph-photos-public.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1920x1080-light-steel-blue-solid-color-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IAMS Icon.ico" />
+    <None Include="Resources\14173-200.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
